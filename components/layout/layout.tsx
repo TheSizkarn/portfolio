@@ -3,14 +3,12 @@ import {ReactNode} from "react";
 
 type Props = {
     children?: ReactNode
-    toggleTheme: any
-    isDarkTheme: boolean
 }
 
-const layout = ({children, toggleTheme, isDarkTheme}: Props) => {
+const layout = ({children}: Props) => {
   return (
     <>
-      <Navbar toggleTheme={toggleTheme} isDarkTheme={isDarkTheme}/>
+      <Navbar/>
       {children}
     </>
   )

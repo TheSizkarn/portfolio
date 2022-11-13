@@ -1,15 +1,8 @@
-import {Header, Logo, Nav, Theme} from "./styles/navbar";
+import {Header, Logo, Nav} from "./styles/navbar";
 import Link from "next/link";
 import LogoInline from "../../public/logo-texte-inline.svg";
-import Sun from "../../public/sun.svg";
-import Moon from "../../public/moon.svg";
 
-type Props = {
-	toggleTheme: any
-	isDarkTheme: boolean
-}
-
-const navbar = ({toggleTheme, isDarkTheme}: Props) => {
+const navbar = () => {
 	return (
 		<Header>
 			<div className="header-wrapper">
@@ -37,11 +30,6 @@ const navbar = ({toggleTheme, isDarkTheme}: Props) => {
 							</li>
 						</ul>
 					</Nav>
-					<Theme onClick={toggleTheme}>
-            {isDarkTheme ?
-							<Sun/> :
-							<Moon/>}
-          </Theme>
 				</div>
 			</div>
 		</Header>
