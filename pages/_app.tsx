@@ -1,8 +1,8 @@
-import type { AppProps } from 'next/app'
-import React, {useState, useEffect} from 'react';
+import type {AppProps} from 'next/app'
+import React, {useEffect, useState} from 'react';
 import {Inter} from '@next/font/google'
 import {ThemeProvider} from 'styled-components';
-import {lightTheme, darkTheme} from "../styles/theme";
+import {darkTheme, lightTheme} from "../styles/theme";
 import GlobalStyles from "../styles/globalStyles";
 import Layout from "../components/layout/layout";
 
@@ -16,7 +16,7 @@ function MyApp({ Component, pageProps }: AppProps) {
     setTheme(updatedTheme);
     localStorage.setItem("theme", updatedTheme);
   };
-
+  
   useEffect(() => {
     const savedTheme = localStorage.getItem("theme");
     const prefersDark = window.matchMedia &&
@@ -27,18 +27,20 @@ function MyApp({ Component, pageProps }: AppProps) {
       setTheme("dark");
     }
   }, []);
-
+  
   return (
     <ThemeProvider theme={isDarkTheme ? darkTheme : lightTheme}>
-    <style jsx global>{`
-      html {
-        font-family: ${inter.style.fontFamily};
-      }
-    `}</style>
-    <GlobalStyles/>
-    <Layout toggleTheme={toggleTheme} isDarkTheme={isDarkTheme}>
-      <Component {...pageProps} />
-    </Layout>
+      <>
+        <style jsx global>{`
+          html {
+            font-family: ${inter.style.fontFamily};
+          }
+        `}</style>
+        <GlobalStyles/>
+        <Layout toggleTheme={toggleTheme} isDarkTheme={isDarkTheme}>
+          <Component {...pageProps} />
+        </Layout>
+      </>
     </ThemeProvider>
   )
 }
