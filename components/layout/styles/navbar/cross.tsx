@@ -2,7 +2,11 @@ import styled from "styled-components";
 import breakpoints from "../../../../styles/helpers/breakpoints";
 
 const cross = styled.span`
-  display: none;
+  display: flex;
+  position: absolute;
+  top: -150px;
+  visibility: hidden;
+  opacity: 0;
   align-items: center;
   justify-content: center;
   cursor: pointer;
@@ -20,6 +24,9 @@ const cross = styled.span`
 
   @media only screen and (max-width: ${breakpoints.maxTablet}px) {
     display: flex;
+    visibility: visible;
+    opacity: 1;
+    position: initial;
   }
 `
 
