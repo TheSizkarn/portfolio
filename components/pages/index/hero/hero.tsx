@@ -9,7 +9,7 @@ const Hero = () => {
           <Image src='/jallain.jpg' alt='Julien ALLAIN' width={370} height={370} quality={100} priority={true} />
         </Picture>
         <Title>
-          Hello, je suis Julien Allain<br/>
+          Hello,<br/>Je suis Julien Allain<br/>
           <div className='carousel'>
             <ul>
               <li><strong>Développeur web</strong></li>
