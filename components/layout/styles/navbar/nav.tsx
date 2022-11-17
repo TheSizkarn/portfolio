@@ -45,7 +45,7 @@ const Nav = styled.nav`
       max-width: 250px;
       width: 100%;
       height: 100%;
-      padding: 2rem 1rem;
+      padding: 0 1rem;
       margin: 0 0 0 auto;
       background: ${({theme}) => theme.body};
       transition: all .5s ease-out;

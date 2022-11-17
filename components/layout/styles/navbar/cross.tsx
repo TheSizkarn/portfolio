@@ -6,11 +6,12 @@ const cross = styled.span`
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  position: absolute;
-  top: 0;
-  right: 0;
-  margin: .5rem;
   z-index: 9999;
+  width: 24px;
+  height: 24px;
+  margin-left: auto;
+  margin-top: .5rem;
+  margin-bottom: .5rem;
 
   svg {
     width: 100%;

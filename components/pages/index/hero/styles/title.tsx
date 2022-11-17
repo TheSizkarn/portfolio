@@ -21,6 +21,7 @@ const Title = styled.h1`
     margin: 0;
     padding: 0;
     animation: move calc(2s * 6) steps(6) infinite;
+    -webkit-animation: move calc(2s * 6) steps(6) infinite;
     
     li {
       flex-shrink: 0;
@@ -29,6 +30,7 @@ const Title = styled.h1`
       padding: 0;
       white-space: nowrap;
       animation: liMove 2s infinite;
+      -webkit-animation: liMove 2s infinite;
     }
   }
   
