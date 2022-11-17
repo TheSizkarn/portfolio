@@ -32,10 +32,6 @@ const Nav = styled.nav`
     visibility: hidden;
     background-color: rgba(0,0,0,.8);
     transition: opacity .5s ease-out;
-
-    ${Cross} {
-      display: none;
-    }
     
     ul {
       position: relative;
