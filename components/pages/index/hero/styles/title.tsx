@@ -20,8 +20,8 @@ const Title = styled.h1`
     flex-wrap: nowrap;
     margin: 0;
     padding: 0;
-    animation: move calc(2s * 6) steps(6) infinite;
-    -webkit-animation: move calc(2s * 6) steps(6) infinite;
+    animation: move calc(3s * 6) steps(6) infinite;
+    -webkit-animation: move calc(3s * 6) steps(6) infinite;
     
     li {
       flex-shrink: 0;
@@ -29,8 +29,8 @@ const Title = styled.h1`
       margin: 0;
       padding: 0;
       white-space: nowrap;
-      animation: liMove 2s infinite;
-      -webkit-animation: liMove 2s infinite;
+      animation: liMove 3s infinite;
+      -webkit-animation: liMove 3s infinite;
     }
   }
   
@@ -51,7 +51,7 @@ const Title = styled.h1`
     0% {
       transform: translate(0, 0);
     }
-    80%,
+    90%,
     100%  {
       transform: translate(0, calc(68 * -1px));
     }
