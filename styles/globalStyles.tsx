@@ -57,7 +57,7 @@ const globalStyles = createGlobalStyle`
     transition: color 0.2s ease-in;
 
     &:hover {
-      color: #e84b4b;
+      color: ${({theme}) => theme.textSecondary};
     }
   }
 

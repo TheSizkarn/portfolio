@@ -1,9 +1,18 @@
-import {Header, Logo, Nav} from "./styles/navbar";
+import {useState, useRef} from "react";
+import {Header, Logo, Nav, Burger, Cross} from "./styles/navbar";
 import Link from "next/link";
 import LogoInline from "../../public/logo-texte-inline.svg";
+import BurgerSvg from "../../public/svg/menu.svg";
+import CrossSvg from "../../public/svg/cross.svg";
+import useOnClickOutside from "../../hooks/useOnClickOutside";
 
 const navbar = () => {
-	return (
+  const [openNav, setOpenNav] = useState(false);
+  const refOpenNav = useRef();
+  
+  useOnClickOutside(refOpenNav, () => setOpenNav(false));
+  
+  return (
 		<Header>
 			<div className="header-wrapper">
 				<div className="header-left">
@@ -14,8 +23,11 @@ const navbar = () => {
 					</Logo>
 				</div>
 				<div className="header-right">
-					<Nav>
-						<ul>
+					<Nav className={openNav ? 'open' : ''}>
+            <Cross onClick={() => setOpenNav(false)}>
+              <CrossSvg />
+            </Cross>
+						<ul ref={refOpenNav}>
 							<li>
 								<Link href='/'>Accueil</Link>
 							</li>
@@ -30,6 +42,9 @@ const navbar = () => {
 							</li>
 						</ul>
 					</Nav>
+          <Burger onClick={() => setOpenNav(true)}>
+            <BurgerSvg/>
+          </Burger>
 				</div>
 			</div>
 		</Header>

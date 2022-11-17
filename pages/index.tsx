@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import Hero from "../components/pages/index/hero/hero";
 
 export default function Home() {
   return (
@@ -12,7 +13,7 @@ export default function Home() {
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png"/>
         <link rel='apple-touch-icon' href="/apple-touch-icon.png"/>
       </Head>
-
+      <Hero/>
     </>
   )
 }

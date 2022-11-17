@@ -1,0 +1,15 @@
+export default {
+  minLargeDesktop: 1921,
+  maxDesktop: 1920,
+  minDesktop: 1441,
+  maxLaptop: 1440,
+  minLaptop: 1267,
+  maxNotebook: 1266,
+  minNotebook: 1125,
+  maxTabletLarge: 1124,
+  minTabletLarge: 834,
+  maxTablet: 833,
+  minTablet: 768,
+  maxMobile: 767,
+  maxSmallMobile: 320,
+}

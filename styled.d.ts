@@ -2,7 +2,9 @@ import 'styled-components'
 
 declare module 'styled-components' {
   export interface DefaultTheme {
-      body: string,
-      text: string,
+    body: string,
+    bodySecondary: string,
+    text: string,
+    textSecondary: string,
   }
 }
