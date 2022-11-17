@@ -18,7 +18,6 @@ const Hero = () => {
               <li><strong>React</strong></li>
               <li><strong>NextJS</strong></li>
               <li><strong>Wordpress</strong></li>
-              <li><strong>Développeur web</strong></li>
             </ul>
           </div>
         </Title>
