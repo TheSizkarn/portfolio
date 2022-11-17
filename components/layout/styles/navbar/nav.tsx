@@ -38,7 +38,7 @@ const Nav = styled.nav`
     }
     
     ul {
-      position: absolute;
+      position: relative;
       z-index: 999;
       right: -150px;
       opacity: 0;

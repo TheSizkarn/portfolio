@@ -24,10 +24,10 @@ const navbar = () => {
 				</div>
 				<div className="header-right">
 					<Nav className={openNav ? 'open' : ''}>
-            <Cross onClick={() => setOpenNav(false)}>
-              <CrossSvg />
-            </Cross>
 						<ul ref={refOpenNav}>
+              <Cross onClick={() => setOpenNav(false)}>
+                <CrossSvg />
+              </Cross>
 							<li>
 								<Link href='/'>Accueil</Link>
 							</li>
