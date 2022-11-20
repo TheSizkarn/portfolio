@@ -3,9 +3,9 @@ import breakpoints from "../../../../../styles/helpers/breakpoints";
 
 const Picture = styled.picture`
   display: block;
-  max-width: 370px;
+  max-width: 400px;
   width: 100%;
-  padding: 0 1rem;
+  padding: 0 2rem;
 
   img {
     max-width: initial;

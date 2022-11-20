@@ -6,7 +6,7 @@ const Hero = () => {
     <Container>
       <Content>
         <Picture>
-          <Image src='/jallain.jpg' alt='Julien ALLAIN' width={370} height={370} quality={100} priority={true} />
+          <Image src='/jallain.jpg' alt='Julien ALLAIN' width={400} height={400} quality={100} priority={true} />
         </Picture>
         <Title>
           Hello,<br/>Je suis Julien Allain<br/>

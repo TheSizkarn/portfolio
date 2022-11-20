@@ -6,7 +6,7 @@ const Content = styled.div`
   align-items: center;
   justify-content: center;
   width: 100%;
-  max-width: ${breakpoints.maxLaptop}px;
+  max-width: ${breakpoints.maxNotebook}px;
   margin: 0 auto;
 
   @media only screen and (max-width: ${breakpoints.maxTablet}px) {

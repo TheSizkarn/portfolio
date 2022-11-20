@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import Hero from "../components/pages/index/hero/hero";
+import About from "../components/pages/index/about/about";
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
         <link rel='apple-touch-icon' href="/apple-touch-icon.png"/>
       </Head>
       <Hero/>
+      <About/>
     </>
   )
 }

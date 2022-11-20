@@ -2,7 +2,7 @@ import styled from "styled-components";
 import breakpoints from "../../../../../styles/helpers/breakpoints";
 
 const Title = styled.h1`
-  padding: 0 1rem 0 2rem;
+  padding: 0 2rem 0 2rem;
   font-size: 3.5rem;
   font-weight: 800;
   font-family: 'Montserrat', sans-serif;

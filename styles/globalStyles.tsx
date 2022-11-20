@@ -33,6 +33,11 @@ const globalStyles = createGlobalStyle`
   ol[role='list'], li, ul {
     list-style: none;
   }
+  
+  p {
+    color: ${({theme}) => theme.textParagraph};
+    line-height: 30px;
+  }
 
   /* Set core root defaults */
   html:focus-within {

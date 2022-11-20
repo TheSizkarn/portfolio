@@ -9,5 +9,6 @@ export const darkTheme: DefaultTheme = {
   body: '#161414',
   bodySecondary: '#191919',
   text: '#f1f1f1',
+  textParagraph: 'rgba(198, 201, 216, 0.75)',
   textSecondary: '#fd4766',
 };

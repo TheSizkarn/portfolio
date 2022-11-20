@@ -5,6 +5,7 @@ declare module 'styled-components' {
     body: string,
     bodySecondary: string,
     text: string,
+    textParagraph: string,
     textSecondary: string,
   }
 }
