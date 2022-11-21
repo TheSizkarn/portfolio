@@ -12,11 +12,6 @@ function MyApp({ Component, pageProps }: AppProps) {
   return (
     <ThemeProvider theme={darkTheme}>
       <>
-        <style jsx global>{`
-          html {
-            font-family: ${inter.style.fontFamily};
-          }
-        `}</style>
         <GlobalStyles/>
         <Layout>
           <Component {...pageProps} />
