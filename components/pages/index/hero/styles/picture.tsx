@@ -18,7 +18,7 @@ const Picture = styled.picture`
 
   @media only screen and (max-width: ${breakpoints.maxTablet}px) {
     max-width: 300px;
-    padding: 2rem 1rem;
+    padding: 0;
     
     img {
       border-width: 10px;
