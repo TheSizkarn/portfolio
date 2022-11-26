@@ -1,4 +1,5 @@
 import type {AppProps} from 'next/app'
+import { Analytics } from '@vercel/analytics/react';
 import React from 'react';
 import {Inter} from '@next/font/google'
 import {ThemeProvider} from 'styled-components';
@@ -15,6 +16,7 @@ function MyApp({ Component, pageProps }: AppProps) {
         <GlobalStyles/>
         <Layout>
           <Component {...pageProps} />
+          <Analytics/>
         </Layout>
       </>
     </ThemeProvider>
