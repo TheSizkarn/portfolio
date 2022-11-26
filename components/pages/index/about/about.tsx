@@ -1,6 +1,7 @@
 import {Container, Content, AboutInner} from "./styles";
 import {TitleH2} from "../../../../styles/components";
 import Image from "next/image";
+import Skills from "./skills";
 
 const About = () => {
   return (
@@ -23,6 +24,7 @@ const About = () => {
             agence de communication à Tours, j'ai décidé de devenir <strong>Freelance</strong> afin de vous apporter mon
             expertise et de répondre à vos projets web !
           </p>
+          <Skills/>
         </AboutInner>
       </Content>
     </Container>

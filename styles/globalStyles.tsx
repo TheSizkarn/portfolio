@@ -7,14 +7,12 @@ const globalStyles = createGlobalStyle`
     transition: background 0.2s ease-in, color 0.2s ease-in;
   }
 
-  /* Box sizing rules */
   *,
   *::before,
   *::after {
     box-sizing: border-box;
   }
 
-  /* Remove default margin */
   body,
   h1,
   h2,
@@ -28,9 +26,10 @@ const globalStyles = createGlobalStyle`
     margin: 0;
   }
 
-  /* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
   ul[role='list'],
   ol[role='list'], li, ul {
+    margin: 0;
+    padding: 0;
     list-style: none;
   }
   
@@ -39,12 +38,10 @@ const globalStyles = createGlobalStyle`
     line-height: 30px;
   }
 
-  /* Set core root defaults */
   html:focus-within {
     scroll-behavior: smooth;
   }
 
-  /* Set core body defaults */
   body {
     min-height: 100vh;
     text-rendering: optimizeSpeed;
@@ -52,7 +49,6 @@ const globalStyles = createGlobalStyle`
     font-family: 'Inter', sans-serif;
   }
 
-  /* A elements that don't have a class get default styles */
   a:not([class]) {
     text-decoration-skip-ink: auto;
   }
@@ -67,14 +63,12 @@ const globalStyles = createGlobalStyle`
     }
   }
 
-  /* Make images easier to work with */
   img,
   picture {
     max-width: 100%;
     display: block;
   }
 
-  /* Inherit fonts for inputs and buttons */
   input,
   button,
   textarea,
@@ -82,7 +76,6 @@ const globalStyles = createGlobalStyle`
     font: inherit;
   }
 
-  /* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
   @media (prefers-reduced-motion: reduce) {
     html:focus-within {
       scroll-behavior: auto;
