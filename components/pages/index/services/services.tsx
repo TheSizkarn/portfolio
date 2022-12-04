@@ -6,10 +6,10 @@ import MobileSvg from "../../../../public/svg/mobile.svg";
 
 const Services = () => {
   return (
-    <Container>
+    <Container id='services'>
       <TitleH2>Mes services</TitleH2>
       <Content>
-        <p>Découvrez mes services dans de développement de site Internet en passant par un site vitrine ou bien un site
+        <p>Découvrez mes services dans le développement de site Internet en passant par un site vitrine ou bien un site
           e-commerce.
           <br/>
           Tout pour répondre idéalement à votre projet web.
