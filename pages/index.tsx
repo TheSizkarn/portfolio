@@ -1,12 +1,13 @@
 import Head from 'next/head'
 import Hero from "../components/pages/index/hero/hero";
 import About from "../components/pages/index/about/about";
+import Services from "../components/pages/index/services/services";
 
 export default function Home() {
   return (
     <>
       <Head>
-        <title>Freelance Développeur Web - Allain Web</title>
+        <title>Freelance Développeur Web à Tours, Blois et Châteauroux - Allain Web</title>
         <meta name="description"
               content="Freelance développeur web, front-end, wordpress, prestashop... A votre disposition pour tout projet web dans la région Centre Val de Loire, ville de Tours, Blois ou encore Châteauroux."/>
         <link rel="icon" href="/favicon.ico"/>
@@ -16,6 +17,7 @@ export default function Home() {
       </Head>
       <Hero/>
       <About/>
+      <Services/>
     </>
   )
 }
